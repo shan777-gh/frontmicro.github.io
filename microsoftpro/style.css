@@ -1,0 +1,539 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    position: relative;
+}
+/*for header*/
+#bt
+{   
+    margin-left:40% ;
+ 
+
+}
+
+
+#menu ul 
+{
+    list-style: none;
+   display: flex;
+
+}
+#menu ul li 
+{
+    
+    padding: 10px;
+    margin-top: 5px;
+}
+#menu ul li a img
+{
+    height:23px ;
+    width:108px;
+}
+#menu ul li a 
+{
+    padding-bottom:10px;
+    text-decoration: none;
+    color:rgb(141, 141, 141);
+    font-size: 15px;
+    position: relative;
+}  
+#menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0; 
+    background-color:rgb(122, 45, 45);
+    
+    transform-origin: bottom left;
+    transition: transform 0.2s ease-out;
+  }
+  #menu ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom right;
+
+    background:LINEAR-GRADIENT(70%,rgb(122, 45, 45),white);
+     
+  }
+#menu ul li ul
+{
+    display:none;
+   
+}
+#menu ul li ul li ul li
+{
+    display: block;
+}
+
+#menu ul li ul li ul li a
+{   
+    color: rgb(209, 57, 57);
+    
+}
+#menu ul li:hover ul 
+{
+   display: block;
+}
+
+#menu #btn
+{    
+    position:absolute;
+    background-color: rgb(131, 126, 126);
+     float: right;
+     padding: 10px;
+     margin-top: 20px;
+     top:-10px;
+     left: 95%;
+}
+#menu #btn2
+{    
+    position:absolute;
+    
+    background-color: rgb(131, 126, 126);
+     float: right;
+     padding: 10px;
+     margin-top: 20px;
+     top:-10px;
+     left: 92%;
+}
+#menu button
+{
+    background-color: rgb(53, 109, 161);
+    border-radius: 5px 5px 5px 5px;
+     color: aliceblue;
+}
+/*for center image div*/
+#menu2
+{
+    display:block;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 15%;
+    color: gray;
+    font-family: sans-serif;
+}
+#menu2 a
+{
+ text-decoration: none;
+ color: brown;
+ background-color: rgb(211, 130, 130);
+ padding: 3px;
+ border-radius: 3px 3px 5px 5px;
+
+}
+#menu2 a:hover
+{
+    transition: 0.5s;
+    color: blueviolet;
+    transform: scale(1.1);
+}
+
+#menu2 input
+{   height: 70px;
+    width:200px;
+    border-color: aliceblue;
+    border-radius:10px 10px 10px 10px;
+    color:rgb(203, 203, 223);
+    background-color: rgb(15, 90, 202);
+    font-size: 20px;
+    
+
+}
+
+#menu2 input:hover
+{
+ transition:0.5s;
+    background:linear-gradient(45deg, rgb(15, 90, 202),gray);
+    color: rgb(226, 228, 215);
+    transform: scale(1.075);
+    text-decoration: underline;
+}
+#menu3 img{
+  height:650px;
+
+}
+/*for myimg1 div*/
+#myimg1
+{
+    display: flex;
+    padding:30px;
+    position: relative;
+}
+#myimg1 .img2
+{
+height: 50px;
+width: 25%;
+padding: 10px;
+list-style: none;
+font-family: sans-serif;
+}
+#myimg1 .img2 a
+{
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.5s;
+
+
+}
+#myimg1 .img2 a img:hover
+{
+    transform: scale(0.98);
+    border-color: antiquewhite;
+}
+#myimg1 .img2 a span:hover
+{       
+   
+     color: cornflowerblue;
+    
+}
+#myimg1 .img2 a .dis
+{
+    color:cornflowerblue;
+    position: absolute;
+    margin-top: 13px;
+}
+
+#myimg1 .img2 a h1
+{    
+    color: cornflowerblue;
+    margin-left: 100px;
+ 
+}
+#myimg1 .img2 a .dis:hover
+{
+ color: dodgerblue;
+ transform: scale(1.075);
+ text-decoration: underline red;
+
+   
+ }
+
+
+ /*for menu4 div*/
+ #menu4
+ {
+  position: absolute;
+  margin-top: 700px;
+  margin-left: 50px;
+
+ }
+ #menu4 .btn3
+ {  
+    height: 80px;
+    width:200px;
+    border-color: aliceblue;
+    border-radius:10px 10px 10px 10px;
+    color:rgb(203, 203, 223);
+    background-color: rgb(15, 90, 202);
+    font-size: 20px;
+    
+ }
+ #menu4 .btn3:hover
+{
+   transition:0.5s;
+    background:linear-gradient(45deg, rgb(15, 90, 202),gray);
+    color: rgb(226, 228, 215);
+    transform: scale(1.075);
+    text-decoration: underline red;
+}
+#menu5
+{   
+    font-family: sans-serif;
+    width: 400px;
+    height: 300px;
+    margin-top: 400px;
+    margin-left: 30px;
+    
+}
+#menu2
+{
+    display:block;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 15%;
+    color: gray;
+    font-family: sans-serif;
+}
+#menu2 a
+{
+ text-decoration: none;
+ color: brown;
+ background-color: rgb(211, 130, 130);
+ padding: 3px;
+ border-radius: 3px 3px 5px 5px;
+
+}
+#menu2 a:hover
+{
+    transition: 0.5s;
+    color: blueviolet;
+    transform: scale(1.1);
+}
+
+#menu2 input
+{   height: 70px;
+    width:200px;
+    border-color: aliceblue;
+    border-radius:10px 10px 10px 10px;
+    color:rgb(203, 203, 223);
+    background-color: rgb(15, 90, 202);
+    font-size: 20px;
+    
+
+}
+
+#menu2 input:hover
+{
+ transition:0.5s;
+    background:linear-gradient(45deg, rgb(15, 90, 202),gray);
+    color: rgb(226, 228, 215);
+    transform: scale(1.075);
+    text-decoration: underline red;
+   
+
+}
+#menu2:hover
+{
+    filter: none;
+    z-index: 9;
+}
+.menu3 img{
+  height:650px;
+
+}
+
+
+/*for myimg2 div*/
+#myimg2
+{
+    display: flex;
+    padding:30px;
+    position: absolute;
+    margin-top: 400px;
+   
+
+}
+#myimg2 .img2
+{
+height: 50px;
+width: 25%;
+padding: 10px;
+list-style: none;
+font-family: sans-serif;
+}
+#myimg2 .img2 a
+{
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.5s;
+
+
+}
+#myimg2 .img2 a img:hover
+{
+    transform: scale(0.98);
+    border-color: antiquewhite;
+}
+#myimg2 .img2 a span:hover
+{       
+   
+     color: cornflowerblue;
+    
+    
+}
+#myimg2 .img2 a .dis
+{
+    color:cornflowerblue;
+    position: absolute;
+    margin-top: 13px;
+}
+
+#myimg2 .img2 a h1
+{    
+    color: cornflowerblue;
+    margin-left: 100px;
+ 
+}
+#myimg2 .img2 a .dis:hover
+{
+ color: dodgerblue;
+ transform: scale(1.075);
+ text-decoration: underline red;
+
+   
+ 
+}
+
+
+#foot .feet  
+
+{   margin-top: 100px;
+    background-color: rgb(53, 53, 53);
+    height: 400px;
+    padding-top: 30px  ;
+    
+
+}  
+
+#foot .feet form .ul2
+{
+    display: block;
+    margin-left: 100px;
+
+}
+#foot .feet form .ul2 ul
+{
+   list-style: none;
+}
+#foot .feet form .ul2 ul li h3
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul2 ul li
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul2 ul li a
+{    color: rgb(116, 118, 119);
+    text-decoration: none;
+}
+#foot .feet form .ul3
+{  display: block;
+   margin-left: 25%;
+   margin-top: -370PX;
+   
+}
+#foot .feet form .ul3 ul
+{
+   list-style: none;
+}
+#foot .feet form .ul3 ul li h3
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul3 ul li
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul3 ul li a
+{    color: rgb(116, 118, 119);
+    text-decoration: none;
+}
+#foot .feet form .ul4
+{display: block;
+   margin-top: -180px;
+    margin-left: 42%;
+}
+#foot .feet form .ul4 ul
+{
+   list-style: none;
+}
+#foot .feet form .ul4 ul li h3
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul4 ul li
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul4 ul li a
+{    color: rgb(116, 118, 119);
+    text-decoration: none;
+}
+#foot .feet form .ul5
+{display: block;
+   margin-left: 65%;
+   margin-top: -225px;
+
+}
+
+#foot .feet form .ul5 ul
+{
+   list-style: none;
+}
+#foot .feet form .ul5 ul li h3
+{
+   padding-bottom: 20px;
+}
+#foot .feet form .ul5 ul li
+{
+   padding-bottom: 30px;
+}
+#foot .feet form .ul5 ul li a
+{    color: rgb(116, 118, 119);
+    text-decoration: none;
+}
+#foot .feet form .ul6
+{display: block;
+   margin-left: 82%;
+   margin-top: -460px;
+}#foot .feet form .ul6   ul
+{
+   list-style: none;
+}
+#foot .feet form .ul6 ul li h3
+{
+   padding-bottom: 20px;
+}
+#foot .feet form .ul6 ul li
+{
+   padding-bottom: 30px;
+}
+#foot .feet form  a
+{    color: rgb(116, 118, 119);
+    text-decoration: none;
+}
+#foot .feet form div ul li ul li a:hover
+{     transform: scale(1.75);
+    text-decoration:underline solid red;
+}
+
+#icons
+{
+    color: rgb(112, 106, 106);
+    margin-top: 900px;
+    margin-left: 4%;
+    display:flex ;
+}
+#icons i{
+    padding: 10px;
+    color: brown;
+    font-size:30px;
+    
+}
+#icons button
+{
+    margin-left: 10px;
+}
+#icons .arrow i
+{
+    background-color: black ;
+     color: wheat;
+    padding: 5px;
+    border: black;
+    
+}
+
+#icons button:hover 
+{
+   transform: scale(1.075);
+   background:linear-gradient(45deg, rgb(15, 90, 202),gray);
+   transition: 0.5s;
+   color: aliceblue;
+}
+#icons button i:hover 
+{
+    color: aliceblue;
+}
+#icons .arrow
+{   border: black;
+    margin-top: 10px;
+    margin-left: 60%;
+
+}
